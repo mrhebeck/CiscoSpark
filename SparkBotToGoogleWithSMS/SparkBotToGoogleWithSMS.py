@@ -105,7 +105,7 @@ def main(in_message):
         -Creates a Sheets API service object:
         https://docs.google.com/spreadsheets/d/1ZDu8T6x77KUSh-Hq4fzW9NCgTx0EU_rWI7lWuPCOEjc/edit
         """
-    print("This is the message mentioned your bot: {0}".format(in_message))
+    print("Message sent to bot: {0}".format(in_message))
     #The above print function is used to verify whether the retrieved message content is correct via terminal.
     credentials = get_credentials()
     http = credentials.authorize(httplib2.Http())
