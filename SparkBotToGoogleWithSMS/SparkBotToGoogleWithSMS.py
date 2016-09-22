@@ -100,7 +100,7 @@ bearer = "Your Bot Bearer Token"
 def main(in_message):
     """
         This method is used for:
-        -retrieving message text, when the webhook is triggered with a message
+        -Retrieving message text, when the webhook is triggered with a message
         -Then post the message to a blank Google Spreadsheet to notify a user there came a Spark message from his bot.
         -Creates a Sheets API service object:
         https://docs.google.com/spreadsheets/d/1ZDu8T6x77KUSh-Hq4fzW9NCgTx0EU_rWI7lWuPCOEjc/edit
