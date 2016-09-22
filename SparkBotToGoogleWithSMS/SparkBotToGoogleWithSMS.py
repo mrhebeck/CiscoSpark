@@ -59,7 +59,7 @@ def get_credentials():
 def sendSparkGET(url):
     """
         This method is used for:
-        -retrieving message text, when the webhook is triggered with a message
+        -Retrieving message text, when the webhook is triggered with a message
         -Getting the username of the person who posted the message if a command is recognized
         """
     request = urllib2.Request(url,
@@ -128,7 +128,7 @@ def send_tropo(message):
        """
     url = 'https://api.tropo.com/1.0/sessions'
     headers = {'accept':'application/json','content-type':'application/json'}
-    values = {'token':'messaging token of your Tropo SMS application', 'msg': message }
+    values = {'token':'MESSAGING TOKEN FROM TROPO APP', 'msg': message }
     data = json.dumps(values)
     req = urllib2.Request(url = url , data = data, headers = headers)
     response = urllib2.urlopen(req)
