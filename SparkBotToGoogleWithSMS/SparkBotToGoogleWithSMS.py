@@ -121,14 +121,14 @@ discoveryServiceUrl=discoveryUrl)
 spreadsheetId=spreadsheetId, range=rangeName, valueInputOption = 'RAW', insertDataOption = 'INSERT_ROWS', body = body).execute()
     return 'ok'
 
-def send_tropo(message):
+def send_tropo(spark_msg):
     """
        This method is used for:
        -Sending the retrieved message to some one's cell phone via a Tropo SMS application just to notify a Spark message from his Bot was received in the Google Spreadsheet.
        """
     url = 'https://api.tropo.com/1.0/sessions'
     headers = {'accept':'application/json','content-type':'application/json'}
-    values = {'token':'MESSAGING TOKEN FROM TROPO APP', 'msg': message }
+    values = {'token':'MESSAGING TOKEN FROM TROPO APP', 'msg': spark_msg }
     data = json.dumps(values)
     req = urllib2.Request(url = url , data = data, headers = headers)
     response = urllib2.urlopen(req)
