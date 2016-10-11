@@ -31,7 +31,7 @@ var http = require('http'); // webserver used to receive request/
 var url = "https://api.tropo.com/1.0/sessions";
 var method = "POST";
 var headers = {"accept": "application/json", "content-type" : "application/json"};
-var data = { "token": "<6245524f7a5262514b46547876465271744e6c6f7547786a764f567262636562557a6267637762424d6c724b"};
+var data = { "token": "<insert Tropo application token below>"};
 
 //Declare function/Sends POST to Tropo
 function sendRequest(myURL, myMethod, myHeaders, myData, callback) { // Sends RESTful requests
